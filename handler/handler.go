@@ -60,7 +60,7 @@ func (c *SftpHandler) SendFile(w http.ResponseWriter, r *http.Request) {
 
 	sshConfig := ssh.ClientConfig{
 		User:            "ridhwan",
-		Auth:            []ssh.AuthMethod{ssh.Password("password")},
+		Auth:            []ssh.AuthMethod{ssh.Password("password123")},
 		HostKeyCallback: ssh.InsecureIgnoreHostKey(),
 	}
 

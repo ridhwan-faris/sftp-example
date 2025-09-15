@@ -1,0 +1,14 @@
+services:
+  sftp-server:
+    image: atmoz/sftp
+    volumes:
+      - ./upload:/home/ridhwan/upload
+    ports:
+      - "2222:22"
+    command: ridhwan:password123:1001
+    networks:
+      - development
+
+networks:
+  development:
+    driver: bridge
